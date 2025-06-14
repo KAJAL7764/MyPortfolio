@@ -1,0 +1,180 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Colors */
+    --primary-color: #8B4513;
+    --secondary-color: #DEB887;
+    --text-color: #2C3E50;
+    --light-text: #666666;
+    --background: #FFFFFF;
+    --card-bg: #F8F9FA;
+    --section-bg: #FFFFFF;
+
+    /* Hover Colors (Darker shades) */
+    --primary-color-darker: #6A340F; /* Darker shade of #8B4513 */
+    --secondary-color-darker: #BE9F68; /* Darker shade of #DEB887 */
+
+    /* Gradients */
+    --primary-gradient: linear-gradient(135deg, #8B4513 0%, #DEB887 100%);
+    --secondary-gradient: linear-gradient(135deg, #DEB887 0%, #8B4513 100%);
+    --accent-gradient: linear-gradient(135deg, #8B4513 0%, #DEB887 50%, #8B4513 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(139, 69, 19, 0.1);
+    --shadow-md: 0 4px 6px rgba(139, 69, 19, 0.1);
+    --shadow-lg: 0 10px 15px rgba(139, 69, 19, 0.1);
+    --project-overlay-bg: rgba(139, 69, 19, 0.9);
+    --primary-color-rgb-0-2: 44, 62, 80; /* RGB values for primary color, used for shadows etc. */
+    --shadow-sm-rgb-0-06: 0,0,0; /* Placeholder for rgba(0,0,0,0.06) */
+    --theme-icon-filter: invert(100%); /* Default to invert for light theme (white icons become black) */
+
+    /* Typography */
+    --font-primary: 'Poppins', sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body.dark-theme {
+    --primary-color: #DEB887; /* Lighter brown for dark theme */
+    --secondary-color: #8B4513; /* Darker brown for dark theme */
+    --text-color: #F8F9FA; /* Light text on dark background */
+    --light-text: #B0B0B0; /* Lighter grey for secondary text */
+    --background: #1A1A1A; /* Dark background */
+    --card-bg: #2C2C2C; /* Slightly lighter dark for cards */
+    --section-bg: #222222; /* Darker background for sections */
+
+    /* Hover Colors (Darker shades for dark theme) */
+    --primary-color-darker: #C2A478; /* Darker shade of #DEB887 */
+    --secondary-color-darker: #6A340F; /* Darker shade of #8B4513 */
+
+    --primary-gradient: linear-gradient(135deg, #DEB887 0%, #8B4513 100%);
+    --shadow-sm: 0 2px 4px rgba(222, 184, 135, 0.1);
+    --shadow-md: 0 4px 6px rgba(222, 184, 135, 0.1);
+    --shadow-lg: 0 10px 15px rgba(222, 184, 135, 0.1);
+    --project-overlay-bg: rgba(222, 184, 135, 0.9); /* Dark theme overlay */
+    --primary-color-rgb-0-2: 222, 184, 135; /* RGB values for primary color for dark theme */
+    --shadow-sm-rgb-0-06: 222, 184, 135; /* Placeholder for dark theme rgba(X,Y,Z,0.06) */
+    --theme-icon-filter: none; /* No invert filter in dark theme (white icons remain white) */
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-full max-w-[1400px] mx-auto px-8;
+  }
+
+  .container-sm {
+    @apply max-w-[1400px];
+  }
+
+  .container-lg {
+    @apply max-w-[1600px];
+  }
+
+  .section {
+    @apply py-16 w-full;
+  }
+
+  .section-content {
+    @apply w-full max-w-[1400px] mx-auto px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-white shadow-md hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1600px) {
+  .container-lg {
+    @apply max-w-[1400px];
+  }
+}
+
+@media (max-width: 1400px) {
+  .container, .section-content {
+    @apply max-w-[1200px];
+  }
+}
+
+@media (max-width: 1200px) {
+  .container, .container-sm, .section-content {
+    @apply max-w-[1000px];
+  }
+}
+
+@media (max-width: 1024px) {
+  .container, .container-sm, .section-content {
+    @apply max-w-[900px] px-6;
+  }
+}
+
+@media (max-width: 768px) {
+  .container, .container-sm, .section-content {
+    @apply max-w-full px-4;
+  }
+  
+  .section {
+    @apply py-12;
+  }
+}
