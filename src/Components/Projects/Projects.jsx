@@ -4,12 +4,20 @@ import { motion } from 'framer-motion'
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      image: "https://via.placeholder.com/600x400",
-      github: "https://github.com/yourusername/ecommerce",
-      live: "https://your-ecommerce-demo.com"
+      title: "VideoMeet Application",
+      description: "A full-stack video conferencing platform that enables high-quality virtual meetings with features like screen sharing, HD video, and secure communication. Ideal for connecting with friends, family, or colleagues—anytime, anywhere.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.IO","WebRTC"],
+      image: "/src/assets/videomeet-screenshot.png",
+      github: "https://github.com/KAJAL7764/VideoMeet",
+      live: "https://videomeetappfrontend-9bls.onrender.com"
+    },
+    {
+      title: "All-in-One Recipe Manager & Planner",
+      description: "The ultimate recipe organizer for quick access to all your recipes across devices. Features include recipe storage, meal planning, and a shopping list generator.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "CSS"],
+      image: "/src/assets/recipeapp.png",
+      github: "https://github.com/KAJAL7764/recipe-app",
+      live: "https://github.com/KAJAL7764/recipe-app"
     },
     {
       title: "Task Management App",
@@ -18,6 +26,14 @@ const Projects = () => {
       image: "https://via.placeholder.com/600x400",
       github: "https://github.com/yourusername/task-manager",
       live: "https://your-task-manager-demo.com"
+    },
+    {
+      title: "Vacation Rental Platform",
+      description: "A web application for browsing and booking vacation rentals, inspired by Airbnb. Features include property listings, search functionality, and a user-friendly interface.",
+      technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "Bootstrap", "ejs"],
+      image: "/src/assets/airbnbproject.png",
+      github: "https://github.com/KAJAL7764/AirbnbFullStack",
+      live: "https://airbnbfullstack-2.onrender.com"
     },
     {
       title: "Portfolio Website",

@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-info">
-            <h3>Your Name</h3>
+            <h3>Kajal chauhan</h3>
             <p>Full Stack Developer</p>
           </div>
           <div className="footer-social">
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+          <p>&copy; {currentYear} kajal chauhan All rights reserved.</p>
           <p className="footer-made">
             Made with <i className="fas fa-heart"></i> using React
           </p>

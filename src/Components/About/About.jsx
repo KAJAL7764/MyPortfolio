@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import './About.css';
+import aboutMe from '../../assets/aboutMe.jpg'; // Import the aboutMe image
 
 const About = () => {
   const techIcons = [
@@ -24,10 +25,10 @@ const About = () => {
         <div className="about-left-new">
           <div className="about-header-new">
             <p className="about-greeting"><span role="img" aria-label="waving hand">👋</span> Hello, I'm</p>
-            <h1 className="your-name-gradient">Your Name</h1>
+            <h1 className="your-name-gradient">Kajal Chauhan</h1>
             <h2 className="about-title-developer">Full Stack Developer</h2>
             <p className="about-description-text">
-              I craft digital experiences that combine beautiful design with powerful functionality. Let's build something amazing together.
+            Skilled in building responsive, full-featured web applications using MongoDB, Express.js, React.js, and Node.js. I create seamless user experiences on the frontend and scalable, secure APIs on the backend. Passionate about clean code, performance, and real-world problem-solving.
             </p>
           </div>
           <div className="about-cta-buttons-new">
@@ -58,7 +59,7 @@ const About = () => {
           <div className="wavy-background-one"></div>
           <div className="wavy-background-two"></div>
           <div className="main-image-circle">
-            <img src="https://i.pravatar.cc/300?img=68" alt="Profile" className="main-profile-img-new" />
+            <img src={aboutMe} alt="Profile" className="main-profile-img-new" />
             
             {techIcons.map((tech, index) => {
               const angle = index * (360 / techIcons.length);

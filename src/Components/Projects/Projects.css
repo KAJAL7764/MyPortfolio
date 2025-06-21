@@ -79,14 +79,18 @@
 .project-image {
   flex: 1;
   position: relative;
-  min-height: 400px;
+  max-height: 450px;
+  height: auto;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
