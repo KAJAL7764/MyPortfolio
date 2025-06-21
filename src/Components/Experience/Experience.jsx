@@ -12,7 +12,7 @@ const Experience = () => {
       description: [
         "Developed and maintained web applications using React.js and Node.js",
         "Implemented responsive designs and optimized application performance",
-        "Collaborated with cross-functional teams to deliver high-quality solutions"
+        "Collaborated with cross-functional teams to deliver high-quality solutions", "Gained hands-on experience in real-time client projects and agile development."
       ]
     },
   ];
@@ -20,8 +20,8 @@ const Experience = () => {
   const achievements = [
     {
       title: "Open Source Contributor",
-      organization: "GitHub",
-      description: "Active contributor to various open-source projects"
+      organization: " GSSoC 2024",
+      description: "Contributed to multiple projects during GirlScript Summer of Code 2024, including web development and feature improvements. Worked on real-world issues, enhanced UI components, fixed bugs, and optimized code for performance and accessibility across various GitHub repositories"
     }
   ];
 
