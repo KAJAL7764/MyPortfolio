@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import './About.css';
-import aboutMe from '../../assets/aboutMe.jpg'; // Import the aboutMe image
+import aboutMe from '../../assets/aboutme.jpg'; // Import the aboutMe image
 
 const About = () => {
   const techIcons = [
