@@ -1,61 +1,6 @@
 import React from 'react';
 import './Skills.css';
 
-const skills = [
-  {
-    icon: 'fab fa-html5',
-    name: 'HTML',
-  },
-  {
-    icon: 'fab fa-css3-alt',
-    name: 'CSS',
-  },
-  {
-    icon: 'fab fa-react',
-    name: 'React.js',
-  },
-  {
-    icon: 'fab fa-node-js',
-    name: 'Node.js',
-  },
-  {
-    icon: 'fas fa-server',
-    name: 'Express.js',
-  },
-  {
-    icon: 'fas fa-leaf',
-    name: 'MongoDB',
-  },
-  {
-    icon: 'fab fa-angular',
-    name: 'Angular',
-  },
-  {
-    icon: 'fas fa-code',
-    name: 'Next.js',
-  },
-  {
-    icon: 'fab fa-aws',
-    name: 'AWS',
-  },
-  {
-    icon: 'fas fa-database',
-    name: 'SQL',
-  },
-  {
-    icon: 'fas fa-exchange-alt',
-    name: 'REST API',
-  },
-  {
-    icon: 'fab fa-github',
-    name: 'GitHub',
-  },
-  {
-    icon: 'fab fa-git-alt',
-    name: 'Git',
-  }
-];
-
 const programmingLanguages = [
   {
     icon: 'fas fa-c',
@@ -79,6 +24,120 @@ const programmingLanguages = [
   }
 ];
 
+const frontendSkills = [
+  {
+    icon: 'fab fa-html5',
+    name: 'HTML',
+  },
+  {
+    icon: 'fab fa-css3-alt',
+    name: 'CSS',
+  },
+  {
+    icon: 'fab fa-react',
+    name: 'React.js',
+  },
+  {
+    icon: 'fab fa-angular',
+    name: 'Angular',
+  },
+  {
+    icon: 'fab fa-vuejs',
+    name: 'Vue.js',
+  },
+  {
+    icon: 'fas fa-code',
+    name: 'Next.js',
+  },
+  {
+    icon: 'fas fa-cube',
+    name: 'Redux',
+  },
+  {
+    icon: 'fab fa-bootstrap',
+    name: 'Bootstrap',
+  },
+  {
+    icon: 'fas fa-wind',
+    name: 'Tailwind CSS',
+  },
+  {
+    icon: 'fab fa-sass',
+    name: 'Sass/SCSS',
+  }
+];
+
+const backendSkills = [
+  {
+    icon: 'fab fa-node-js',
+    name: 'Node.js',
+  },
+  {
+    icon: 'fas fa-server',
+    name: 'Express.js',
+  },
+ 
+  {
+    icon: 'fab fa-java',
+    name: 'Spring Boot',
+  },
+  {
+    icon: 'fas fa-leaf',
+    name: 'MongoDB',
+  },
+  {
+    icon: 'fas fa-database',
+    name: 'SQL',
+  },
+  {
+    icon: 'fas fa-exchange-alt',
+    name: 'REST API',
+  },
+  {
+    icon: 'fas fa-fire',
+    name: 'Redis',
+  },
+  {
+    icon: 'fas fa-cloud',
+    name: 'GraphQL',
+  }
+];
+
+const otherTools = [
+  {
+    icon: 'fab fa-aws',
+    name: 'AWS',
+  },
+  {
+    icon: 'fab fa-github',
+    name: 'GitHub',
+  },
+  {
+    icon: 'fab fa-git-alt',
+    name: 'Git',
+  },
+  {
+    icon: 'fas fa-code',
+    name: 'VS Code',
+  },
+  {
+    icon: 'fas fa-jet-fighter',
+    name: 'IntelliJ IDEA',
+  },
+  {
+    icon: 'fas fa-paper-plane',
+    name: 'Postman',
+  },
+  {
+    icon: 'fab fa-docker',
+    name: 'Docker',
+  },
+  {
+    icon: 'fas fa-terminal',
+    name: 'Terminal',
+  }
+];
+
 const Skills = () => {
   return (
     <section id="skills" className="skills-section-dark">
@@ -87,10 +146,23 @@ const Skills = () => {
           <h2>My Skills</h2>
           <div className="skills-underline"></div>
         </div>
+        
         <div className="skills-category">
-          <h3><i className="fas fa-laptop-code"></i>Technologies</h3>
+          <h3><i className="fas fa-code-branch"></i>Programming Languages</h3>
           <div className="skills-grid">
-            {skills.map((skill, idx) => (
+            {programmingLanguages.map((lang, idx) => (
+              <div className="skill-card" key={idx}>
+                <i className={lang.icon}></i>
+                <div className="skill-name">{lang.name}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="skills-category">
+          <h3><i className="fas fa-palette"></i>Frontend Technologies</h3>
+          <div className="skills-grid">
+            {frontendSkills.map((skill, idx) => (
               <div className="skill-card" key={idx}>
                 <i className={skill.icon}></i>
                 <div className="skill-name">{skill.name}</div>
@@ -100,12 +172,24 @@ const Skills = () => {
         </div>
 
         <div className="skills-category">
-          <h3><i className="fas fa-code-branch"></i>Programming Languages</h3>
+          <h3><i className="fas fa-server"></i>Backend Technologies And Database</h3>
           <div className="skills-grid">
-            {programmingLanguages.map((lang, idx) => (
+            {backendSkills.map((skill, idx) => (
               <div className="skill-card" key={idx}>
-                <i className={lang.icon}></i>
-                <div className="skill-name">{lang.name}</div>
+                <i className={skill.icon}></i>
+                <div className="skill-name">{skill.name}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="skills-category">
+          <h3><i className="fas fa-tools"></i>Other Tools & Platforms</h3>
+          <div className="skills-grid">
+            {otherTools.map((tool, idx) => (
+              <div className="skill-card" key={idx}>
+                <i className={tool.icon}></i>
+                <div className="skill-name">{tool.name}</div>
               </div>
             ))}
           </div>
