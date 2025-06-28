@@ -1,5 +1,8 @@
 import './Projects.css'
 import { motion } from 'framer-motion'
+import videomeetScreenshot from '../../assets/videomeet-screenshot.png'
+import recipeApp from '../../assets/recipeapp.png'
+import airbnbProject from '../../assets/airbnbproject.png'
 
 const Projects = () => {
   const projects = [
@@ -7,7 +10,7 @@ const Projects = () => {
       title: "VideoMeet Application",
       description: "A full-stack video conferencing platform that enables high-quality virtual meetings with features like screen sharing, HD video, and secure communication. Ideal for connecting with friends, family, or colleagues—anytime, anywhere.",
       technologies: ["React", "Node.js", "MongoDB", "Express", "Socket.IO","WebRTC"],
-      image: "/src/assets/videomeet-screenshot.png",
+      image: videomeetScreenshot,
       github: "https://github.com/KAJAL7764/VideoMeet",
       live: "https://videomeetappfrontend-9bls.onrender.com"
     },
@@ -15,7 +18,7 @@ const Projects = () => {
       title: "All-in-One Recipe Manager & Planner",
       description: "The ultimate recipe organizer for quick access to all your recipes across devices. Features include recipe storage, meal planning, and a shopping list generator.",
       technologies: ["React", "Node.js", "Express", "MongoDB", "CSS"],
-      image: "/src/assets/recipeapp.png",
+      image: recipeApp,
       github: "https://github.com/KAJAL7764/recipe-app",
       live: "https://github.com/KAJAL7764/recipe-app"
     },
@@ -31,7 +34,7 @@ const Projects = () => {
       title: "Vacation Rental Platform",
       description: "A web application for browsing and booking vacation rentals, inspired by Airbnb. Features include property listings, search functionality, and a user-friendly interface.",
       technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "Bootstrap", "ejs"],
-      image: "/src/assets/airbnbproject.png",
+      image: airbnbProject,
       github: "https://github.com/KAJAL7764/AirbnbFullStack",
       live: "https://airbnbfullstack-2.onrender.com"
     },
