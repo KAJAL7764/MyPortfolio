@@ -50,8 +50,9 @@ const Contact = () => {
               <label htmlFor="interest">What you are interested</label>
               <select id="interest" name="interest">
                 <option value="design-branding">Design & Branding</option>
-                <option value="web-development">Web Development</option>
-                <option value="mobile-development">Mobile Development</option>
+                <option value="web-development">FrontendDevelopment</option>
+                <option value="mobile-development">Backend Development</option>
+                <option value="mobile-development">DevOps</option>
                 <option value="other">Other</option>
               </select>
             </div>
@@ -59,10 +60,10 @@ const Contact = () => {
               <label htmlFor="budget">Project Budget</label>
               <select id="budget" name="budget">
                 <option value="">Select your budget</option>
-                <option value="<5k">Less than $5,000</option>
-                <option value="5k-10k">$5,000 - $10,000</option>
-                <option value="10k-20k">$10,000 - $20,000</option>
-                <option value=">20k">More than $20,000</option>
+                <option value="<1k">Less than $1,000</option>
+                <option value="2k-4k">$2,000 - $4,000</option>
+                <option value="4k-5k">$4,000 - $5,000</option>
+                <option value=">5k">More than $5,000</option>
               </select>
             </div>
           </div>
